@@ -34,15 +34,21 @@ const Navbar = () => {
 
 			<div className="items-center">
 				<ul className="flex items-center justify-center gap-8">
-					<li className="text-white/60 hover:text-white hover:bg-white/15 px-4 py-2 rounded-3xl cursor-pointer transition-all duration-300">
-						Features
-					</li>
-					<li className="text-white/60 hover:text-white hover:bg-white/15 px-4 py-2 rounded-3xl cursor-pointer transition-all duration-300">
-						How It Works
-					</li>
-					<li className="text-purple-500 bg-purple-500/20 border-purple-500/40 border hover:text-white hover:bg-purple-500 hover:shadow-purple-500/20 hover:shadow-lg hover:border-transparent px-4 py-2 rounded-3xl cursor-pointer transition-all duration-300">
-						Get Started
-					</li>
+					<a href="#features">
+						<li className="text-white/60 hover:text-white hover:bg-white/15 px-4 py-2 rounded-3xl cursor-pointer transition-all duration-300">
+							Features
+						</li>
+					</a>
+					<a href="#how-it-works">
+						<li className="text-white/60 hover:text-white hover:bg-white/15 px-4 py-2 rounded-3xl cursor-pointer transition-all duration-300">
+							How It Works
+						</li>
+					</a>
+					<a href="#get-started">
+						<li className="text-purple-500 bg-purple-500/20 border-purple-500/40 border hover:text-white hover:bg-purple-500 hover:shadow-purple-500/20 hover:shadow-lg hover:border-transparent px-4 py-2 rounded-3xl cursor-pointer transition-all duration-300">
+							Get Started
+						</li>
+					</a>
 				</ul>
 			</div>
 		</div>
@@ -98,7 +104,10 @@ const Features = () => {
 	];
 
 	return (
-		<section className="w-[95%] bg-[radial-gradient(circle,rgba(17,24,39,0.3)_0%,rgba(168,85,247,0.15)_70%)] backdrop-blur-3xl border-t border-b border-white/20 px-24 py-16 my-12 mx-auto rounded-3xl drop-shadow-2xl">
+		<section
+			id="features"
+			className="w-[95%] bg-[radial-gradient(circle,rgba(17,24,39,0.3)_0%,rgba(168,85,247,0.15)_70%)] backdrop-blur-3xl border-t border-b border-white/20 px-24 py-16 my-12 mx-auto rounded-3xl drop-shadow-2xl"
+		>
 			<h2 className="text-4xl font-bold mb-12 text-center text-white">
 				Features
 			</h2>
@@ -153,7 +162,10 @@ const Working = () => {
 	];
 
 	return (
-		<section className="w-[95%] bg-gradient-to-tl from-gray-900 via-purple-800 to-gray-900 px-24 py-16 my-12 mx-auto rounded-3xl drop-shadow-2xl">
+		<section
+			id="how-it-works"
+			className="w-[95%] bg-gradient-to-tl from-gray-900 via-purple-800 to-gray-900 px-24 py-16 my-12 mx-auto rounded-3xl drop-shadow-2xl"
+		>
 			<h2 className="text-4xl font-bold mb-12 text-center text-white">
 				How It Works
 			</h2>
@@ -180,7 +192,10 @@ const Working = () => {
 
 const CTA = () => {
 	return (
-		<section className="w-[95%] bg-[radial-gradient(circle,rgba(168,85,247,0.3)_0%,rgba(17,24,39,0.01)_70%)] backdrop-blur-3xl border-t border-b border-white/20 px-24 py-16 my-12 mx-auto rounded-3xl drop-shadow-2xl text-center">
+		<section
+			id="get-started"
+			className="w-[95%] bg-[radial-gradient(circle,rgba(168,85,247,0.3)_0%,rgba(17,24,39,0.01)_70%)] backdrop-blur-3xl border-t border-b border-white/20 px-24 py-16 my-12 mx-auto rounded-3xl drop-shadow-2xl text-center"
+		>
 			<h2 className="text-4xl font-bold mb-6 text-white">
 				Ready to Moodify Your Music?
 			</h2>
